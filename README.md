@@ -2,6 +2,12 @@
 
 A Web UI for the Candy Machine v3 minting program.
 
+## Preview
+
+![Desktop preview of Neo-CMv3](preview.png)
+
+Preview it live [here](https://neo-cmv3.vercel.app/).
+
 ## Install
 
     git clone https://github.com/cherri-labs/neo-cmv3/
@@ -23,12 +29,6 @@ to create a production build.
 - CSS variables in [globals.css](/styles/globals.css)
 - title, icon and meta tags in [index.tsx](/pages/index.tsx)
 - image slider in [Home.tsx](src/Home.tsx) (near the top)
-
-## Preview
-
-![Desktop preview of Neo-CMv3](preview.png)
-
-Preview it live [here](https://neo-cmv3.vercel.app/).
 
 ## Deploy *(recommended)*
 
