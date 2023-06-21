@@ -1,15 +1,6 @@
 # neo-cmv3
 
-## Introduction
-
-This is is some minor improvement upon the [original repo](https://github.com/wearekite/candy-machine-v3-ui), with some connection error fixes,
-some CSS added variables in globals.css for easier and more diverse customization, font (Noto Sans) and color (wallet menus) style refinements,
-self-hosted font imports (previous one was not working for me), Firefox patches (number input appearance and more).
-
-I've also provided a quick setup for title, icon and meta tags which you can customize in the [index.tsx](/pages/index.tsx).
-
-I implemented a simple image slider instead than just the bare image element, but by default nav controls are hidden and in the example there is
-only one image in the array. You can customize it in `src/Home.tsx` pretty much near the top.
+A Web UI for the Candy Machine v3 minting program.
 
 ## Install
 
@@ -27,10 +18,11 @@ or
 
 to create a production build.
 
-The original project, while very cool, was a mess. But since CMv3 is still in alpha and the Metaplex official repo only provides you with a very
-ugly red quickstart example, it seems reasonable. You still may have to `npm i --force` to solve some dependency issues (or god knows what else),
-and you'll still find a bit of a bungalow down in the console section of your browser. Just try to ignore that. The Candy Machine still worked as
-expected (for me). I've had similar or same errors with the very examples provided by Solana Labs as well.
+## Configuration
+
+- CSS variables in [globals.css](/styles/globals.css)
+- title, icon and meta tags in [index.tsx](/pages/index.tsx)
+- image slider in [Home.tsx](src/Home.tsx) (near the top)
 
 ## Preview
 
@@ -38,11 +30,9 @@ expected (for me). I've had similar or same errors with the very examples provid
 
 Preview it live [here](https://neo-cmv3.vercel.app/).
 
-## Deploy with Vercel *(recommended)*
+## Deploy *(recommended)*
 
-Vercel is great to host your Candy Machine on, deploy it instantly by clicking the button below.
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fcherri-labs%2Fneo-cmv3&env=NEXT_PUBLIC_SOLANA_NETWORK,NEXT_PUBLIC_RPC_HOST,NEXT_PUBLIC_CANDY_MACHINE_ID&project-name=neo-cmv3&repository-name=neo-cmv3)
+[![One-click deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fcherrynoize%2Fneo-cmv3&env=NEXT_PUBLIC_SOLANA_NETWORK,NEXT_PUBLIC_RPC_HOST,NEXT_PUBLIC_CANDY_MACHINE_ID&project-name=neo-cmv3&repository-name=neo-cmv3)
 
 ## Implemented features
 
@@ -90,16 +80,15 @@ NEXT_PUBLIC_CANDY_MACHINE_ID=candyMachineID
 ```
 *If on Vercel or a similar host you need to add these as environmental variables in your project settings.*
 
-## Customization
+## Troubleshooting
 
-Most of the colors can be found as variables in [globals.css](/styles/globals.css). Generally this is where you want to configure your own theme
-for the Candy Machine.
-
-## Legacy previews
-
-![Candy Machine V3 with Start Date](https://media.discordapp.net/attachments/1039648022516215919/1072171560288399440/startdatecmv3.png)
-
-![Candy Machine V3 with Address Gate, Allow List or other similar guards](https://cdn.discordapp.com/attachments/1039648022516215919/1072171559520833656/privatecmv3.png)
+Since the Metaplex official repo only provides you with a very
+ugly quickstart example, you may still have to `npm i --force` to
+solve some dependency issues (or god knows what else),
+and you'll still find a bit of a bungalow down in the console
+section of your browser. Just try to ignore that. The Candy Machine
+still worked as expected for me. I've had similar or same errors
+with the very examples provided by Solana Labs as well.
 
 ## Credits
 
