@@ -8,6 +8,10 @@ A Web UI for the Candy Machine v3 minting program.
 
 Preview it live [here](https://neo-cmv3.vercel.app/).
 
+## Deploy
+
+[![One-click deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fcherrynoize%2Fneo-cmv3&env=NEXT_PUBLIC_SOLANA_NETWORK,NEXT_PUBLIC_RPC_HOST,NEXT_PUBLIC_CANDY_MACHINE_ID&project-name=neo-cmv3&repository-name=neo-cmv3)
+
 ## Install
 
     git clone https://github.com/cherri-labs/neo-cmv3/
@@ -29,10 +33,6 @@ to create a production build.
 - CSS variables in [globals.css](/styles/globals.css)
 - title, icon and meta tags in [index.tsx](/pages/index.tsx)
 - image slider in [Home.tsx](src/Home.tsx) (near the top)
-
-## Deploy *(recommended)*
-
-[![One-click deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fcherrynoize%2Fneo-cmv3&env=NEXT_PUBLIC_SOLANA_NETWORK,NEXT_PUBLIC_RPC_HOST,NEXT_PUBLIC_CANDY_MACHINE_ID&project-name=neo-cmv3&repository-name=neo-cmv3)
 
 ## Implemented features
 
